@@ -53,8 +53,8 @@ public class _02_FindTheHiddenButton implements ActionListener{
 		
 		//14. Set the text of the JButton located at hiddenButton the read "ME"
 
-		//15. Use Thread.sleep(100); to pause the program.
-		//    Surround it with a try/catch
+		//15. Use Thread.sleep(1000); to pause the program.
+		//    Surround it with a try/catch - use Eclipse helper for this
 		
 		//16. Set the text of the JButton located at hiddenButton to be blank.
 		
