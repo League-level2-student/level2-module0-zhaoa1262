@@ -20,17 +20,38 @@ public class _00_ArrayCheatSheet {
 		
 		//6. make an array of 50 integers
 		int[] integers = new int[50];
+		Random number = new Random();
 		//7. use a for loop to make every value of the integer array a random number
+		int smallest = integers[0];
 		
 		for (int n : integers) {
-			Random number = new Random();
+			number = new Random();
 			int r = number.nextInt();
-		     System.out.println(r);
+			if(smallest>r) {
+		     smallest = r;
+			}
+			if(smallest<r) {
+				smallest=smallest;
+			}
 		}
+		System.out.println(smallest);
 		//8. without printing the entire array, print only the smallest number in the array
 		
 		//9 print the entire array to see if step 8 was correct
 		
 		//10. print the largest number in the array.
+		int largest = integers[0];
+		
+		for (int x : integers) {
+			number = new Random();
+			int r = number.nextInt();
+			if(largest<r) {
+		     largest = r;
+			}
+			if(smallest>r) {
+				largest=largest;
+			}
+		}
+		System.out.println(largest);
 	}
 }
